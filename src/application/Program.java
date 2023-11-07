@@ -24,6 +24,11 @@ public class Program {
 
         Product product = new Product(name, price);
 
+        product.setName("Computer");
+        System.out.printf("Updated data: %s", product.getName());       // MUDANDO OS ATRIBUTOS PELO GETTER E SETTER
+        product.setPrice(1200);
+        System.out.printf("Updated price: %s", product.getPrice());
+
 //        System.out.println(product.name);
 //        System.out.println(product.price); // CONFERINDO OS VALORES DO CONSTRUTOR PARA VER SE NAO ESTA MAIS VAZIO
 //        System.out.println(product.quantity);
@@ -36,14 +41,14 @@ public class Program {
         int quantity = sc.nextInt();
         product.addProducts(quantity);
         System.out.println();
-        System.out.printf("Updated data: %s", product.toString());
+        System.out.printf("Updated data: %s", product);
 
         System.out.println();
         System.out.print("Enter the number of products to be removed from stock: ");
         quantity = sc.nextInt();
         product.removeProducts(quantity);
         System.out.println();
-        System.out.printf("Updated data: %s", product.toString());
+        System.out.printf("Updated data: %s", product);
 
 
     }
