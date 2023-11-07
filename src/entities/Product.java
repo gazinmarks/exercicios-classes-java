@@ -15,6 +15,11 @@ public class Product { // Essa é a classe do nosso programa.
         this.quantity = quantity;
     }
 
+    public Product(String name, double price){        // SOBRECARGA DE CONSTRUTOR INFERINDO APENAS NOME E PREÇO
+        this.name = name;
+        this.price = price;
+    }
+
     public double totalValueInStock() {
         return price * quantity;
     } // Método que retorna o valor total em estoque da nossa classe Product.
