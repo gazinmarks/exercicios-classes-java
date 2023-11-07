@@ -9,6 +9,13 @@ public class Student {
     public double secondNote;
     public double thirdNote;
 
+    public Student (String name, double firstNote, double secondNote, double thirdNote){
+        this.name = name;
+        this.firstNote = firstNote;
+        this.secondNote = secondNote;
+        this.thirdNote = thirdNote;
+    }
+
 
     public double sumNote() {
         return firstNote + secondNote + thirdNote;

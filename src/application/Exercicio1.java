@@ -11,12 +11,13 @@ public class Exercicio1 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Rectangle rectangle = new Rectangle();
 
 
         System.out.println("Enter rectangle width and height: ");
-        rectangle.width = sc.nextDouble();
-        rectangle.height = sc.nextDouble();
+        double width = sc.nextDouble();
+        double height = sc.nextDouble();
+
+        Rectangle rectangle = new Rectangle(height, width);
 
         double area = rectangle.area();
         System.out.printf("Area: %.2f%n", area);

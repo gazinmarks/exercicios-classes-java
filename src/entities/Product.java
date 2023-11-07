@@ -9,6 +9,12 @@ public class Product { // Essa é a classe do nosso programa.
     public int quantity;
     // Esses são os atributos da nossa classe (váriaveis).
 
+    public Product(String name, double price, int quantity){ // CONSTRUTOR PARA ATRIBUIR VALORES AOS ATRIBUTOS
+        this.name = name;                                    // E EVITAR QUE FIQUEM VAZIOS
+        this.price = price;
+        this.quantity = quantity;
+    }
+
     public double totalValueInStock() {
         return price * quantity;
     } // Método que retorna o valor total em estoque da nossa classe Product.

@@ -6,6 +6,12 @@ public class Employee { // classe funcionário
     public double grossSalary;
     public double tax;
 
+    public Employee(String name, double grossSalary, double tax){
+        this.name = name;
+        this.grossSalary = grossSalary;
+        this.tax = tax;
+    }
+
     public double netSalary() {
         return grossSalary - tax;
     }

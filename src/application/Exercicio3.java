@@ -11,21 +11,22 @@ public class Exercicio3 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Student student = new Student();
 
         System.out.print("Name: ");
-        student.name = sc.nextLine();
+        String name = sc.nextLine();
         System.out.println();
 
         System.out.print("First note: ");
-        student.firstNote = sc.nextDouble();
+        double firstNote = sc.nextDouble();
 
         System.out.print("Second note: ");
-        student.secondNote = sc.nextDouble();
+        double secondNote = sc.nextDouble();
 
         System.out.print("Third note: ");
-        student.thirdNote = sc.nextDouble();
+        double thirdNote = sc.nextDouble();
         System.out.println();
+
+        Student student = new Student(name, firstNote, secondNote, thirdNote);
 
         System.out.printf("Final grade = %.2f%n", student.sumNote());
 

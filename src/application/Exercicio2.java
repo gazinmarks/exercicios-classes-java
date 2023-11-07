@@ -12,18 +12,22 @@ public class Exercicio2 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Employee employee = new Employee();
-
 
         System.out.print("Name: ");
-        employee.name = sc.nextLine();
+        String name = sc.nextLine();
 
         System.out.print("Gross salary: ");
-        employee.grossSalary = sc.nextDouble();
+        double grossSalary = sc.nextDouble();
 
         System.out.print("Tax: ");
-        employee.tax = sc.nextDouble();
+        double tax = sc.nextDouble();
         System.out.println();
+
+        Employee employee = new Employee(name, grossSalary, tax);
+
+//        System.out.println(employee.name);        |
+//        System.out.println(employee.grossSalary); | TESTANDO PARA VER SE O CONSTRUTOR NAO ESTA VAZIO
+//        System.out.println(employee.tax);         |
 
         System.out.printf("Employee: %s, $ %.2f", employee.name, employee.netSalary());
         System.out.println();
