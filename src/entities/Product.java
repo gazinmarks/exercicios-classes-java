@@ -19,23 +19,23 @@ public class Product { // Essa é a classe do nosso programa.
         this.price = price;
     }
 
-    public String getName(){                           // GETTERS E SETTERS PARA ENCAPSULAMENTO DO CODIGO
+    public String getName() {                           // GETTERS E SETTERS PARA ENCAPSULAMENTO DO CODIGO
         return name;
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
-    public double getPrice(){
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(double price){
+    public void setPrice(double price) {
         this.price = price;
     }
 
-    public int getQuantity(){
+    public int getQuantity() {
         return quantity;
     }                                                   // GETTERS E SETTERS PARA ENCAPSULAMENTO DO CODIGO
 
